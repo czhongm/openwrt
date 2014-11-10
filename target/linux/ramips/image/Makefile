@@ -820,6 +820,7 @@ Image/Build/Profile/WR8305RT=$(call BuildFirmware/Default8M/$(1),$(1),wr8305rt,W
 Image/Build/Profile/WRTNODE=$(call BuildFirmware/Default16M/$(1),$(1),wrtnode,WRTNODE)
 Image/Build/Profile/WT3020=$(call BuildFirmware/DefaultDualSize/$(1),$(1),wt3020,WT3020)
 Image/Build/Profile/ZBT-WA05=$(call BuildFirmware/Default8M/$(1),$(1),zbt-wa05,ZBT-WA05)
+Image/Build/Profile/WR856N=$(call BuildFirmware/Default8M/$(1),$(1),wr856n,WR856N)
 
 ifeq ($(SUBTARGET),mt7620n)
 define Image/Build/Profile/Default
@@ -830,6 +831,7 @@ define Image/Build/Profile/Default
 	$(call Image/Build/Profile/WRTNODE,$(1))
 	$(call Image/Build/Profile/WT3020,$(1))
 	$(call Image/Build/Profile/ZBT-WA05,$(1))
+	$(call Image/Build/Profile/WR856N,$(1))
 endef
 endif
 
